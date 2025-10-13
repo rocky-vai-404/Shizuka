@@ -13,7 +13,7 @@ module.exports = {
   config: {
     name: "romanticvideo",
     aliases: ["rv"],
-    version: "1.1",
+    version: "1.2",
     author: "Rocky", // ❌ Do not change this
     countDown: 5,
     role: 0,
@@ -52,37 +52,26 @@ module.exports = {
     }
   },
 
-  // 🔗 Add your Drive links here
+  // 🔗 Drive links
   drivePool: [
     "https://drive.google.com/uc?export=download&id=1Vo4i2WAuJaDEX139r_AlWH29tMK8HnUE",
     "https://drive.google.com/uc?export=download&id=1yXj4M4kc4iVrg7rjv-1KMJcwoJK7U1CK",
     "https://drive.google.com/uc?export=download&id=18y0QSMRy66i_Xg1hMVqDWkvCwkobee9I",
     "https://drive.google.com/uc?export=download&id=1mAfoOgMnsy9kTGMGU8VGGsHsv8CE_L5e",
-
-"https://drive.google.com/uc?export=download&id=1-Jf9VP4J9Fda6ajWfdY9AIBYRfx0pezA",
-
-"https://drive.google.com/uc?export=download&id=1rxhztcl8toe9wmVBsOVOkSSjXLjVu6l3",
-
-"https://drive.google.com/uc?export=download&id=1DRL5DvDEy3c6pJo3fEL5cnuP3RCP4JZR",
-
-"https://drive.google.com/uc?export=download&id=16SEQAUEAIpOvzep6COOxfgs6x8Mpt7Qt",
-
-"https://drive.google.com/uc?export=download&id=1cDWQKgOegwtKMAikMplUy6zv9rS4Wpuv",
-
-"https://drive.google.com/uc?export=download&id=10I0vgh2KmYoU_AcT7PF8YFyU3V7q1cxT",
-
-"https://drive.google.com/uc?export=download&id=1V57jxhtVCAHORpxdiIkHcvAbzgWK11ZW",
-
-"https://drive.google.com/uc?export=download&id=1l7Bm2ClPsoGdrlo6DZ8PmGFHAL7hTCvv",
-
-"https://drive.google.com/uc?export=download&id=1RTFop6Ct-w4jtJjvmZgj0ZMKtiMTNiwe",
-
-"https://drive.google.com/uc?export=download&id=1k6zGxl9tkNlIzK09p3uuJjOOqyWiXtPR",
-
-"https://drive.google.com/uc?export=download&id=1hTMLi02hOEdyI1pcmRZ1SoqlPVlFjoCj"
+    "https://drive.google.com/uc?export=download&id=1-Jf9VP4J9Fda6ajWfdY9AIBYRfx0pezA",
+    "https://drive.google.com/uc?export=download&id=1rxhztcl8toe9wmVBsOVOkSSjXLjVu6l3",
+    "https://drive.google.com/uc?export=download&id=1DRL5DvDEy3c6pJo3fEL5cnuP3RCP4JZR",
+    "https://drive.google.com/uc?export=download&id=16SEQAUEAIpOvzep6COOxfgs6x8Mpt7Qt",
+    "https://drive.google.com/uc?export=download&id=1cDWQKgOegwtKMAikMplUy6zv9rS4Wpuv",
+    "https://drive.google.com/uc?export=download&id=10I0vgh2KmYoU_AcT7PF8YFyU3V7q1cxT",
+    "https://drive.google.com/uc?export=download&id=1V57jxhtVCAHORpxdiIkHcvAbzgWK11ZW",
+    "https://drive.google.com/uc?export=download&id=1l7Bm2ClPsoGdrlo6DZ8PmGFHAL7hTCvv",
+    "https://drive.google.com/uc?export=download&id=1RTFop6Ct-w4jtJjvmZgj0ZMKtiMTNiwe",
+    "https://drive.google.com/uc?export=download&id=1k6zGxl9tkNlIzK09p3uuJjOOqyWiXtPR",
+    "https://drive.google.com/uc?export=download&id=1hTMLi02hOEdyI1pcmRZ1SoqlPVlFjoCj"
   ],
 
-  // 💋 Sexy caption pool (add as many as you want)
+  // 💋 Caption pool
   captionPool: [
     "🔥 Love feels even hotter when you’re watching this 💋",
     "💞 Let the vibe melt your heart… and maybe a little more 😘",
@@ -103,7 +92,14 @@ module.exports = {
     try {
       api.setMessageReaction("💗", event.messageID, () => {}, true);
 
-      // Pick random video + random caption
+      // ✨ Send stylish pre-message before uploading
+      await api.sendMessage(
+        "⏳💖 𝐀𝐩𝐧𝐚𝐫 𝐯𝐢𝐝𝐞𝐨 𝐭𝐢 𝐮𝐩𝐥𝐨𝐚𝐝 𝐤𝐨𝐫𝐚 𝐡𝐨𝐬𝐬𝐞...\n🌸 𝐊𝐢𝐬𝐮 𝐤𝐡𝐨𝐧 𝐨𝐩𝐞𝐤𝐡𝐚 𝐤𝐨𝐫𝐮𝐧 💞\n✨ ʏᴏᴜʀ ʀᴏᴄᴋʏ ʙᴏᴛ 💫",
+        threadID,
+        event.messageID
+      );
+
+      // Pick random video + caption
       const pick = this.drivePool[Math.floor(Math.random() * this.drivePool.length)];
       const caption = this.captionPool[Math.floor(Math.random() * this.captionPool.length)];
       const directUrl = this.normalizeDrive(pick);
@@ -118,7 +114,7 @@ module.exports = {
       if (fs.existsSync(filePath) && (await fs.stat(filePath)).size > 0) {
         await api.sendMessage(
           {
-            body: `${caption}\n\nOwner: Rocky — m.me/rocky.vai.320`,
+            body: `${caption}\n\n💝 𝐎𝐰𝐧𝐞𝐫: 𝐑𝐨𝐜𝐤𝐲\n🔗 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: https://www.facebook.com/bd.king.riyaz.top.voicer.420`,
             attachment: fs.createReadStream(filePath),
           },
           threadID,
