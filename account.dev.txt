@@ -14,7 +14,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1794934624.697314,
+        "expirationDate": 1794936405.610984,
         "hostOnly": false,
         "httpOnly": true,
         "name": "datr",
@@ -27,7 +27,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1768150722.622175,
+        "expirationDate": 1768152393.522236,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -36,7 +36,7 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "0Nm788uX4sFN1zpAm.AWeVQTGhKiEs4eb7-x8gu9XZapbU9j7j0WmLfGiReDe7vB0qZ-Y.Bo7S4F..AAA.0.0.Bo7S_D.AWegZ_Um2KxBk1kaeJSUGOVzpzA"
+        "value": "0Nm788uX4sFN1zpAm.AWc9ugk6Z9ganfE1AAid6EKJCfOGrHb6vWlhtXiAJs4WdRqby48.Bo7S4F..AAA.0.0.Bo7TZK.AWfkbfrA4w06eZpN5c4KmfaAqC4"
     },
     {
         "domain": ".facebook.com",
@@ -92,18 +92,6 @@
     },
     {
         "domain": ".facebook.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "m_pixel_ratio",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "3"
-    },
-    {
-        "domain": ".facebook.com",
         "expirationDate": 1791910687.794743,
         "hostOnly": false,
         "httpOnly": false,
@@ -117,7 +105,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1794934722.622929,
+        "expirationDate": 1794936393.523859,
         "hostOnly": false,
         "httpOnly": true,
         "name": "pas",
@@ -153,18 +141,6 @@
         "session": false,
         "storeId": null,
         "value": "BS7taNhYVD-XKceucFHhJfet"
-    },
-    {
-        "domain": ".facebook.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "wd",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "360x820"
     },
     {
         "domain": ".facebook.com",
