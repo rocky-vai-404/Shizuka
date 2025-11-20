@@ -1,7 +1,7 @@
 [
     {
         "domain": ".facebook.com",
-        "expirationDate": 1798052602.96492,
+        "expirationDate": 1798220065.65837,
         "hostOnly": false,
         "httpOnly": true,
         "name": "datr",
@@ -14,7 +14,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1771268630.256262,
+        "expirationDate": 1771436062.655378,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -23,7 +23,7 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "0q3Eo0DTBscnvsqEF.AWfnVkghAa67YMmHkJxnrHIhOb8fIlES4n6zUIIwZI5ZjCaVpEc.BpHML7..AAA.0.0.BpHMMW.AWfw07ZhSPWrBkfqzsVnmyRrV5g"
+        "value": "0q3Eo0DTBscnvsqEF.AWfz9Z7vOTaNOGkUnykiCbHssbvP5s6-9CSa9SqGTLT4h-_ORCs.BpHML7..AAA.0.0.BpH1Ef.AWeSvr2X21IkWBs7VF6dLGl-Dbw"
     },
     {
         "domain": ".facebook.com",
@@ -79,18 +79,6 @@
     },
     {
         "domain": ".facebook.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "m_pixel_ratio",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "3"
-    },
-    {
-        "domain": ".facebook.com",
         "expirationDate": 1795028611.639415,
         "hostOnly": false,
         "httpOnly": false,
@@ -104,7 +92,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1798052630.257305,
+        "expirationDate": 1798220062.656039,
         "hostOnly": false,
         "httpOnly": true,
         "name": "pas",
@@ -127,18 +115,6 @@
         "session": false,
         "storeId": null,
         "value": "-8IcadEQjdr3EkWM2qB9OlN0"
-    },
-    {
-        "domain": ".facebook.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "wd",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "360x820"
     },
     {
         "domain": ".facebook.com",
